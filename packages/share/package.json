@@ -4,12 +4,13 @@
   "description": "> TODO: description",
   "author": "davletbaev <inferion00@gmail.com>",
   "homepage": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.js",
   "directories": {
     "test": "__tests__"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  },
+  "gitHead": "23be2b3702ad9dadc346fa46b6b85b9a2dac002a"
 }
