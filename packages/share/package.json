@@ -1,0 +1,15 @@
+{
+  "name": "@smekalka/share",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "davletbaev <inferion00@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
