@@ -1,5 +1,5 @@
 {
-  "name": "@simpozio/share",
+  "name": "@smekalka/share",
   "version": "0.0.3",
   "description": "> TODO: description",
   "author": "davletbaev <inferion00@gmail.com>",
@@ -12,5 +12,8 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "248f04911b534ce6a4b226d4533e4e7f257875e5"
+  "gitHead": "b29d4450bd439bfb73d1a04a0cf20a5ab0925b44",
+  "publishConfig": {
+    "access": "public"
+  }
 }
