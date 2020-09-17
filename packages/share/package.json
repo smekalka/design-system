@@ -1,5 +1,5 @@
 {
-  "name": "@smekalka/share",
+  "name": "@simpozio/share",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "davletbaev <inferion00@gmail.com>",
@@ -12,5 +12,5 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "08b34d3d23d2337ae8e9f8023315272a165e85d3"
+  "gitHead": "248f04911b534ce6a4b226d4533e4e7f257875e5"
 }
