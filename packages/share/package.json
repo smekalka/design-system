@@ -1,19 +1,44 @@
 {
-  "name": "@smekalka/share",
+  "name": "@simpozio/share",
   "version": "0.0.3",
   "description": "> TODO: description",
   "author": "davletbaev <inferion00@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "directories": {
+    "dist": "dist",
     "test": "__tests__"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "compile": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --colors"
   },
   "gitHead": "b29d4450bd439bfb73d1a04a0cf20a5ab0925b44",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "node-sass": "^4.14.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.14.1",
+    "rollup": "^2.27.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.8"
   }
 }

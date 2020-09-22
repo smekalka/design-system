@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services {
+  margin-bottom: 1em;
+}
+
+.featured {
+  composes: services;
+}
+
+.button {
+  border: 0;
+  background: none;
+  color: inherit;
+  font-size: 1em;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: lowercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.show-more-button {
+  composes: button;
+
+  text-decoration: underline;
+}
+
+.share-button {
+  composes: button;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  & + .share-button {
+    margin-left: 1em;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  font-size: 3em;
+  color: inherit;
+  fill: currentColor;
+}
+
+.label {
+
+}
