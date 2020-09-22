@@ -4,6 +4,10 @@
     "airbnb/hooks",
     "prettier"
   ],
+  "plugins": [
+    "jest",
+    "react"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
@@ -16,16 +20,15 @@
     "browser": true,
     "es6": true,
     "commonjs": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
-  "plugins": [
-    "simple-import-sort"
-  ],
   "rules": {
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-plusplus": "off",
     "consistent-return": "off",
-    "import/order": "off",
     "react/jsx-curly-spacing": [
       "error",
       {
@@ -259,56 +262,6 @@
         "prev": "export",
         "next": "export"
       }
-    ],
-    "simple-import-sort/sort": [
-      "error",
-      {
-        "groups": [
-          [
-            "^react",
-            "^\\w",
-            "^@(?!components|shared|store|data|modules)\\w+"
-          ],
-          [
-            "^@modules"
-          ],
-          [
-            "^@components"
-          ],
-          [
-            "^@assets/styles",
-            "^\\./styles"
-          ],
-          [
-            "^@assets/img"
-          ],
-          [
-            "^@store",
-            "^@shared/api",
-            "^@shared/helpers"
-          ],
-          [
-            "^@shared/constants",
-            "@data"
-          ],
-          [
-            "^@types",
-            "^@shared/types",
-            "^\\./types$",
-            "^(\\w*|@components)(/\\w*)?/types$"
-          ],
-          [
-            "^\\.\\.(?!/?$)",
-            "^\\.\\./?$"
-          ],
-          [
-            "^\\.(\\/(?!types)\\w+)+$"
-          ],
-          [
-            "^\\u0000"
-          ]
-        ]
-      }
     ]
   },
   "overrides": [
@@ -326,34 +279,6 @@
   "settings": {
     "react": {
       "version": "detect"
-    },
-    "import/resolver": {
-      "alias": [
-        [
-          "@modules",
-          "./src/modules"
-        ],
-        [
-          "@components",
-          "./src/components"
-        ],
-        [
-          "@assets",
-          "./src/assets"
-        ],
-        [
-          "@layouts",
-          "./src/layouts"
-        ],
-        [
-          "@shared",
-          "./src/shared"
-        ],
-        [
-          "@store",
-          "./src/store"
-        ]
-      ]
     }
   }
 }
