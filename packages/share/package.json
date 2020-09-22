@@ -1,6 +1,6 @@
 {
   "name": "@simpozio/share",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "> TODO: description",
   "author": "davletbaev <inferion00@gmail.com>",
   "homepage": "",
@@ -23,9 +23,9 @@
     "classnames": "^2.2.6"
   },
   "peerDependencies": {
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "node-sass": "^4.14.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
