@@ -1,7 +1,7 @@
 {
   "name": "@simpozio/share",
   "version": "0.1.1",
-  "description": "> TODO: description",
+  "description": "React component for social media sharing",
   "author": "davletbaev <inferion00@gmail.com>",
   "homepage": "",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "dev": "rollup -c -w",
     "test": "jest --colors"
   },
-  "gitHead": "cb02d630d5884ce2fae872629b5621faefc92afc",
+  "gitHead": "66b1506d63deadd2db1580e0eff9589a892bcb61",
   "publishConfig": {
     "access": "public"
   },
