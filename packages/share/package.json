@@ -15,7 +15,7 @@
     "dev": "rollup -c -w",
     "test": "jest --colors"
   },
-  "gitHead": "b29d4450bd439bfb73d1a04a0cf20a5ab0925b44",
+  "gitHead": "cb02d630d5884ce2fae872629b5621faefc92afc",
   "publishConfig": {
     "access": "public"
   },

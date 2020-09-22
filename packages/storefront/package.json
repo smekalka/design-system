@@ -33,5 +33,6 @@
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
-  }
+  },
+  "gitHead": "cb02d630d5884ce2fae872629b5621faefc92afc"
 }
