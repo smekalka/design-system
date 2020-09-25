@@ -1,0 +1,8 @@
+.babelrc
+
+src/
+__tests__/
+
+*.config.js
+
+*.log
