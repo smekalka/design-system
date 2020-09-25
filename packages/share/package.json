@@ -15,7 +15,7 @@
     "dev": "rollup -c -w",
     "test": "jest --colors"
   },
-  "gitHead": "c63857ae7e66bada3a3cfc8520374bec22e48987",
+  "gitHead": "5b8682c71c452c8d0f69cbca597ce2a311d956b6",
   "publishConfig": {
     "access": "public"
   },
@@ -39,6 +39,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-multi-input": "^1.1.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^3.1.8"
   }
