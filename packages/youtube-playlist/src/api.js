@@ -1,39 +1,51 @@
-let onYouTubeIframeAPIReady = () => {
-};
-
-class Player {
-  constructor({ apiKey, root, width, height, playlistId }) {
-    this.apiKey = apiKey;
-    this.root = root;
-    this.playlistId = playlistId;
-    this.size = {
-      width,
-      height,
-    };
+/* global gapi */
+export const initApi = () => {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector('[data-gapi]')) {
+      resolve();
+    }
 
     const tag = document.createElement('script');
 
-    tag.src = 'https://www.youtube.com/iframe_api';
+    tag.src = 'https://apis.google.com/js/api.js';
+    tag.dataset.gapi = true;
+    tag.onload = resolve;
+    tag.onerror = reject;
+
     const firstScriptTag = document.getElementsByTagName('script')[0];
 
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  });
+};
 
-    // eslint-disable-next-line no-unused-vars
-    onYouTubeIframeAPIReady = this.initPlayer;
-  }
+export const loadClient = (apiKey) => {
+  return new Promise((resolve, reject) => {
+    gapi.load('client', {
+      callback: () => {
+        gapi.client.setApiKey(apiKey);
 
-  initPlayer = () => {
-    // eslint-disable-next-line no-undef
-    this.player = new YT.Player(this.root, {
-      height: this.size.height,
-      width: this.size.width,
-      videoId: '',
+        gapi.client.load('https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest')
+          .then(resolve)
+          .catch((err) => {
+            console.error('Error loading GAPI client for API: ', err);
+            reject();
+          });
+      },
     });
+  });
+};
 
-    this.player.loadPlaylist({
+export const loadPlaylist = (playlistId) => {
+  return gapi.client.youtube.playlistItems.list({
+    'part': [ 'snippet' ],
+    'maxResults': 50,
+    'playlistId': playlistId,
+  });
+};
 
-    })
-  };
-}
-
-export default Player;
+export const loadVideo = (...videoIds) => {
+  return gapi.client.youtube.videos.list({
+    'part': [ 'snippet', 'contentDetails' ],
+    'id': videoIds,
+  });
+};

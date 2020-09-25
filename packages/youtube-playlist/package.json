@@ -1,0 +1,25 @@
+{
+  "name": "@simpozio/youtube-playlist",
+  "version": "0.0.1",
+  "description": "Component for YouTube player with playlist support",
+  "author": "davletbaev <inferion00@gmail.com>",
+  "homepage": "https://github.com/smekalka/design-system#readme",
+  "license": "MIT",
+  "main": "dist/bundle.js",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smekalka/design-system.git"
+  },
+  "scripts": {
+    "compile": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --colors"
+  },
+  "bugs": {
+    "url": "https://github.com/smekalka/design-system/issues"
+  }
+}
