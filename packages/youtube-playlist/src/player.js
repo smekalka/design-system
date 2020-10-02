@@ -27,6 +27,12 @@ class Player {
           height,
           width,
           videoId,
+          playerVars: {
+            'playsinline': 1,
+            'controls': 0,
+            'fs': 0,
+            'disablekb': 1
+          },
           events: {
             onReady: () => {
               resolve();

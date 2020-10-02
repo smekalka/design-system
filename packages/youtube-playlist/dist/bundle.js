@@ -104,6 +104,12 @@ var Player = /*#__PURE__*/function () {
             height: height,
             width: width,
             videoId: videoId,
+            playerVars: {
+              'playsinline': 1,
+              'controls': 0,
+              'fs': 0,
+              'disablekb': 1
+            },
             events: {
               onReady: function onReady() {
                 resolve();
