@@ -1,6 +1,6 @@
 {
   "name": "storefront",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "> TODO: description",
   "author": "davletbaev <inferion00@gmail.com>",
   "homepage": "https://github.com/smekalka/design-system#readme",
@@ -23,7 +23,7 @@
     "url": "https://github.com/smekalka/design-system/issues"
   },
   "dependencies": {
-    "@simpozio/share": "^0.2.2",
+    "@simpozio/share": "^0.2.3",
     "@simpozio/youtube-playlist": "^0.2.2"
   },
   "devDependencies": {
