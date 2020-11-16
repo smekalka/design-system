@@ -18,7 +18,7 @@ export const PRIORITY_MAP = [
 ];
 
 export const SHARE_DATA = {
-  facebook: 'https://www.facebook.com/dialog/share?app_id=179569853382104&display=popup&href=',
+  facebook: 'https://www.facebook.com/dialog/share?app_id=179569853382104&display=page&href=',
   vk: 'https://vk.com/share.php?url=',
   whatsapp: 'https://wa.me/?text=',
   twitter: 'https://twitter.com/intent/tweet?url=',
